@@ -13,6 +13,9 @@ class Lethe < Formula
   def install
     bin.install "lethe"
     bin.install "lethe-claude-code"
+    # Both binaries are linked with rpath `@loader_path`, so
+    # libduckdb resolves when shipped alongside them in bin/.
+    bin.install "libduckdb.dylib"
   end
 
   test do
