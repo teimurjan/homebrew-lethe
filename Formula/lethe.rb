@@ -1,14 +1,14 @@
 class Lethe < Formula
   desc "Persistent memory store for LLM agents"
   homepage "https://github.com/teimurjan/lethe"
-  version "0.13.0"
+  version "0.14.0"
   license "MIT"
 
   depends_on arch: :arm64
   depends_on :macos
 
-  url "https://github.com/teimurjan/lethe/releases/download/lethe-v0.13.0/lethe-macos-arm64.tar.gz"
-  sha256 "9659b0372c0205565ce6f0725cd68c6ca16d92627ffac85a1c25cb6e21a4788a"
+  url "https://github.com/teimurjan/lethe/releases/download/lethe-v0.14.0/lethe-macos-arm64.tar.gz"
+  sha256 "1cff57053e89245ba4decb1a1a99e4f92576a9122468de2e93667bd18c73374e"
 
   def install
     bin.install "lethe"
